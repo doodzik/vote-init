@@ -1,3 +1,18 @@
 language: ruby
 rvm:
+  - 2.0.0
+  - 2.1.0
   - 2.2.0
+  - ruby-head
+  - jruby-18mode
+  - jruby-19mode
+  - jruby-head
+  - rbx-2
+deploy:
+  provider: rubygems
+  api_key:
+    secure: Gc71yLrBVv67qYSC3r7+MP9rG6OiMy2k+XW7hAoorZkm0yfzzLsJDjE8tL8PlGC9UvSnQYqaDQhLdZ2oMixomKO8oA5PM2NB7fN891hLXSjVtaf6OsDjZMGl/SNdkMXbV6gmZ/G5/3aSlbIQNDEeIbu80JF+JyvalCElOf0rv/4=
+  gem: vote_init
+  on:
+    tags: true
+    repo: doodzik/vote_init

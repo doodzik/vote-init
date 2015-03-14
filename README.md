@@ -3,9 +3,11 @@
 Too many precious keystrokes are wasted on writing the Ruby class initializer!
 This is unacceptable.
 ![unessesary keystrokes are unacceptable](http://media.giphy.com/media/QUaqJRizED5NC/giphy.gif)
+
 We should use a shorter word than 'initialize'. The word 'init' is shorter and equivalent to 'initialize'.
 So this Gem gives you the ability to use init instead of initialize.
 If you are in favor of 'init', but are concerned of the monkey patching of the Object class you can use this Abbreviation in your .vimrc file:
+
 
 ```vim
 ab init initialize
@@ -58,7 +60,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/vote_init/fork )
+1. Fork it ( https://github.com/doodzik/vote_init/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
