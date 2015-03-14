@@ -1,8 +1,15 @@
 # VoteInit
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/vote_init`. To experiment with that code, run `bin/console` for an interactive prompt.
+Too many precious keystrokes are wasted on writing the Ruby class initializer!
+This is unacceptable.
+![unessesary keystrokes are unacceptable](http://media.giphy.com/media/QUaqJRizED5NC/giphy.gif)
+We should use a shorter word than 'initialize'. The word 'init' is shorter and equivalent to 'initialize'.
+So this Gem gives you the ability to use init instead of initialize.
+If you are in favor of 'init', but are concerned of the monkey patching of the Object class you can use this Abbreviation in your .vimrc file:
 
-TODO: Delete this and the text above, and describe your gem
+```vim
+ab init initialize
+```
 
 ## Installation
 
@@ -22,7 +29,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'vote_init'
+
+class Foo
+  def init
+    p 'foo'
+  end
+end
+
+class Bar
+  def initialize
+    p 'bar'
+  end
+end
+
+Bar.new
+#=> "bar"
+Foo.new
+#=> "foo"
+```
 
 ## Development
 

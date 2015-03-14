@@ -1,5 +1,8 @@
-require "vote_init/version"
+require 'vote_init/version'
 
-module VoteInit
-  # Your code goes here...
+# mokey patches Object class to check if init is defined
+class Object
+  def self.method_added(method_name)
+    alias_method :initialize, :init if method_name == :init
+  end
 end
