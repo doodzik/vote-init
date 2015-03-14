@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Use init instead of initialize'
   spec.homepage      = 'https://github.com/doodzik/vote_init'
   spec.license       = 'MIT'
-  spec.files         = `git ls-files -z`.split("\x0").reject do
-                          |f| f.match(/^(test|spec|features)\//)
+  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
+    f.match(/^(test|spec|features)\//)
   end
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(/^exe\//) { |f| File.basename(f) }
