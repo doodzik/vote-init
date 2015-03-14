@@ -1,11 +1,14 @@
 # VoteInit
 
 Too many precious keystrokes are wasted on writing the Ruby class initializer!
+
 This is unacceptable.
 ![unessesary keystrokes are unacceptable](http://media.giphy.com/media/QUaqJRizED5NC/giphy.gif)
 
 We should use a shorter word than 'initialize'. The word 'init' is shorter and equivalent to 'initialize'.
+
 So this Gem gives you the ability to use init instead of initialize.
+
 If you are in favor of 'init', but are concerned of the monkey patching of the Object class you can use this Abbreviation in your .vimrc file:
 
 
