@@ -1,7 +1,6 @@
 # VoteInit
 
 Too many precious keystrokes are wasted on writing the Ruby class initializer!
-
 This is unacceptable.
 ![unessesary keystrokes are unacceptable](http://media.giphy.com/media/QUaqJRizED5NC/giphy.gif)
 
